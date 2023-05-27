@@ -1,0 +1,83 @@
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer>*{
+    width: 100%;
+    
+}
+
+/* left */
+#footer-brand>*{
+    margin: 1em 0;
+}
+
+#footer-brand>div{
+    user-select: none;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+}
+
+#footer-logo{
+    height: 8vh;
+    padding-right: 0.5em;
+}
+
+#footer-copyright-text {
+    position: absolute;
+    align-self: flex-end;
+}
+
+
+/* Center */
+#footer-links>h2{
+    margin: 0.5em;
+}
+
+#footer-links{
+    list-style-type: none;
+    margin-left: 10%;
+}
+
+.footer-link{
+    margin: 0.8em;
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    color: var(--secondary-color);
+}
+
+/* Right */
+#newsletter>form>input{
+    margin: 1em 0;
+    padding: 0.2em;
+    font-size: 1.1em;
+}
+
+.subscription-btn {
+    border: 2px solid #0763ee;
+    background-color: #0763ee;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.subscription-btn:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.75s;
+}

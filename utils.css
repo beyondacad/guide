@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway&family=Source+Sans+Pro&display=swap');
+
+:root{
+    /* --primary-color : #1c313a; */
+    --primary-color : #000;
+    --secondary-color : #f0c42c;
+    --bg1 : #fff;
+    --bg2 : #f3f3f3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.logo-text{
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 900;
+}
+
+.btn{
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    color: var(--bg1);
+    border-radius: 4px;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.primary-btn:after {
+  content: '→';
+  position: absolute;
+  opacity: 0;  
+  transition: 0.5s;
+  top: 18%;
+}
+
+.primary-btn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.primary-btn:hover:after{
+  opacity: 1;
+  right: 15px;
+}
+
+
+.secondary-btn{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    
+}
+
+.secondary-btn:hover{
+    background-color: white;
+    color: var(--main-color);
+    border-color: var(--primary-color);
+    text-decoration: underline;
+    transition: .75s;
+}
+
+.explore-all-mini-courses-btn{
+  background-color: var(--primary-color);
+  color: white;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;8i
+  transition: 0.5s;
+  margin-top: 15px;
+  font-family: 'Source Sans Pro', monospace;
+
+
+} 
+
+.explore-all-mini-courses-btn:after {
+  content: '→';
+  position: absolute;
+  opacity: 0;  
+  transition: 0.5s;
+  top: 25%;
+}
+
+.explore-all-mini-courses-btn:hover{
+  padding-right: 25px;
+  padding-left:8px;
+}
+
+.explore-all-mini-courses-btn:hover:after{
+  opacity: 1;
+  right: 10px;
+}
+

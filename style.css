@@ -1,0 +1,135 @@
+#main-page{
+    height: 100vh;
+    background-color: var(--bg1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main-page-heading{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#main-page-subheading{
+    font-size: 1.5em;
+}
+
+#main-page-right{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-page-right>img{
+    height: 25vh;
+    margin: 0.5em;
+    box-shadow: 2px 2px 10px var(--primary-color);
+    border-radius: 5px;
+}
+
+#main-page-bg-2{
+    position: relative;
+    right: -10vw;
+}
+
+#main-page-bg-3{
+    position: relative;
+    right: -5vw;
+}
+/* mini-courses */
+#mini-courses{
+    background-color: var(--bg2);
+    padding: 1em;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-caption{
+    font-style: italic;
+}
+
+.courses-text{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.course-explore-all-btn{
+    width: 150px;
+    margin: 2em;
+}
+
+/* Category */
+.courses-category-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding: 1em;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.courses-category-container::-webkit-scrollbar {
+    display: flex;
+}
+
+.course-category{
+    min-width: fit-content;
+    cursor: pointer;
+    margin: 0.8em;
+}
+
+.course-category:hover{
+    text-decoration: underline;
+}
+
+#course-category-selected{
+    font-weight: bold;
+}
+
+/* card */
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+    
+} 
+
+.card{
+    background-color: var(--bg1);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1em;
+    margin: 1em;
+    min-width: 20vw;
+    box-shadow: 0 0px 20px grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.card>img{
+    height: 23vh;
+    border-bottom: 2px solid var(--primary-color);
+    align-self: center;
+}
+
+.card>.btn{
+    width: fit-content;
+}
+
+.card>*{
+    margin: 0.5em 0;
+}
+
+.card-heading{
+    color: var(--primary-color);
+}
